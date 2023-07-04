@@ -1,0 +1,300 @@
+<title>SAM's profile</title>
+<body>
+    <div class="total">
+        
+        <div class="flex">
+            
+        <div class="aboutme">-ABOUT ME-</div>
+        <div class="menu-flex">
+            <a href="./home.html"><img  class="arrow" src="./arrow.jpeg"></a>
+            <div class="menu-flex1">
+                <a href="./home.html" ><img class="home-icon" src="./home-icon.jpeg"></a>
+                    <a href="./skills.html" ><img class="skills-icon" src="./skills-icon.jpeg"></a>
+                    <a href="./works.html" ><img class="works-icon" src="./works-icon.png"></a>
+                    <a href="./contact_me.html" ><img class="works-icon" src="./contact-icon.jpeg"></a>
+                    <a href="./entrance.html"><img class="entrance-icon" src="./entrance1.jpeg"></a> 
+            </div>
+        </div>
+         
+            <div class="grid">
+                
+                <div class="grid-1">
+                    <div class="grid-1-flex">
+                        <div class="a1"><u>NAME</u>         :-</div>
+                        <div class="a2"><u>D-O-B</u>        :-</div>
+                        <div class="a3"><u>SCHOOLING</u>    :-</div>
+                        <div class="a4"><u>INTERMEDIATE</u> :-</div>
+                        <div class="a5"><u>GRADUATION</u>   :-</div>
+                        <div class="a6"><u>BRANCH</u>       :-</div>
+                        <div class="a7"><u>FAV COLOUR</u>   :-</div>
+                        <div class="a8"><u>SPORTS</u>       :-</div>
+                        <div class="a9"><u>HOBBIES</u>      :-</div>
+                     
+
+
+                    </div>
+                </div>
+                <div class="grid-2">
+                    <div class="grid-2-flex">
+                        <div class="a1" >BAllA SAI SAMPATH</div>
+                        <div class="a2">-- -- 2004</div>
+                        <div class="a3" class="a9">PRIYANKA'S VIDYODAYA HIGH SCHOOL</div>
+                        <div class="a4">SRI CHAITANYA JUNIOR COLLEGE OF ENGINEERING</div>
+                        <div class="a5">MAHARAJ VIJAYARAM GAJAPTHI RAJ COLLEGE</div>
+                        <div class="a6">COMPUTER SCIENCE ENGINEERING</div>
+                        <div class="a7">BLACK</div>
+                        <div class="a8">FOOTBALL,SWIMMING</div>
+                        <div class="a9">CREATIVE DESIGNING,READING BOOKS</div>
+                        
+                    </div>
+                    
+                    
+
+                </div>
+                <div class="grid-3-flex">
+                    <div class="grid-3"><img class="image" src="./sam2.JPEG"></div>
+                  
+                </div>
+                
+
+            </div>
+        </div>
+    </div>      
+
+
+
+</body>
+
+<style>
+
+    .total{
+        background-image: url(https://media.giphy.com/media/FjJMYGHJEBmlq/giphy.gif);
+        background-size:contain;
+        background-color:darkseagreen;
+    }
+
+    .flex{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .grid{
+        
+        display: grid;
+        grid-template-columns: 300px 700px 400px;
+        grid-template-rows: 100%;
+        gap: 7px;
+        margin-left:60px;
+        
+        
+    }
+    .menu-flex{
+        display: flex;
+    }
+    .menu-flex1{
+        margin: 0 0 20 20;
+        display: flex;
+        background-color: black;
+        width: 350px;
+        padding: 10px;
+        padding-left:20px ;
+        gap: 20px;
+
+    }
+    .home-icon,.profile-icon,.skills-icon,.works-icon,.contact-icon{
+        height: 50px;
+        width: 50px;
+        border-radius: 10px;
+        transition: height 0.5s,width 0.5s, border 0.5s ;
+    }
+    .entrance-icon{
+        height: 50px;
+        width: 50px;
+        border-radius: 10px;
+        transition: height 0.5s,width 0.5s, border 0.5s ;
+    }
+
+    .home-icon:hover,.profile-icon:hover,.skills-icon:hover,.works-icon:hover,.entrance-icon:hover,.contact-icon:hover{
+        height: 60px;
+        width: 60px;
+        border: 5px solid red;
+        
+    }
+    .grid >*{
+        background-color: black;
+        border: 3px solid white;
+        color: white;
+    
+    }
+    .grid-1-flex{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+        
+        
+    }
+    .grid-1-flex>*{
+        height: 70px;
+        font-size: 30px;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+        border: 1px solid white;
+        padding: 20 0 0 10;
+        
+        
+    }
+    .grid-2-flex{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    .grid-2-flex>*{
+        height: 70px;
+        font-size: 30px;
+        border: 1px solid white;
+        padding: 20 0 0 10;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+        font-weight: 500;
+        font-style: oblique;
+    }
+
+    .grid-3-flex{
+        display: flex;
+        flex-direction: column;
+        background-color: transparent;
+        border: none;
+       
+    }
+
+    .aboutme{
+        height: 100px;
+        text-align: center;
+        margin: 0 35% 50px 35%;
+        font-size: 50px;
+        border-top: 8px solid black;
+        border-left:8px solid black ;
+        border-bottom:2px solid black ;
+        border-right:2px solid black ;
+        border-radius:20px ;
+        font-weight: 600;
+        font-style: oblique;
+        background-color: lightskyblue;
+        transition:font-size 1s, background-color 1s;
+        animation: blinker 2.5s linear infinite;
+        color:blue ;
+
+       
+    }
+    @keyframes blinker{
+        50%{
+            opacity:0.7;
+            color: red;
+        }
+    }
+    .aboutme:hover{
+        background-color: yellow;
+        font-size: 60px;
+       
+    }
+    .grid-3{
+        background-color: transparent;
+        border: none ;
+
+    }
+    .image{
+        height: 200px;
+        border-radius: 100px;
+        margin-left: 50px;
+        position: fixed;
+        border: 2px solid black;
+        transition:opacity 1s, height 1s,border-style 1s, border 1s, border-radius 1s;
+        opacity: 0.5;
+
+
+    }
+    .image:hover{
+        height: 300px;
+        border-radius: 150px;
+        border: 7px solid black;
+        border-style: dashed;
+        opacity: 1;
+        border-color:white;
+        border-left: 2px;
+        border-right: 2px;
+    }
+    .a1{
+        
+        transition: background-color 0.5s;
+    }
+    .a1:hover{
+        background-color: #fc00ff;
+    }
+    .a2{
+        
+        transition: background-color 0.5s;
+    }
+    .a2:hover{
+        background-color: #361ae5;
+    }
+    .a3{
+        
+        transition: background-color 0.5s;
+    }
+    .a3:hover{
+        background-color: #219fde;
+    }
+    .a4{
+        
+        transition: background-color 0.5s;
+    }
+    .a4:hover{
+        background-color: #1de2aa;
+    }
+    .a5{
+        
+        transition: background-color 0.5s;
+    }
+    .a5:hover{
+        background-color: #00ff35;
+    }
+    .a6{
+        
+        transition: background-color 0.5s;
+    }
+    .a6:hover{
+        background-color:#d2ff00 ;
+    }
+    .a7{
+        
+        transition: background-color 0.5s;
+    }
+    .a7:hover{
+        background-color: #ff7200;
+    }
+    .a8{
+        
+        transition: background-color 0.5s;
+    }
+    .a8:hover{
+        background-color: #ff001d;
+    }
+    .a9{
+        
+        transition: background-color 0.5s,color 0.5s;
+    }
+    .a9:hover{
+        background-color: white;
+        color: black;
+    }
+
+    .arrow{
+        height: 40px;
+        width: 40px;
+        border-radius: 10px;
+        display: inline;
+        margin: 0 0 20 60;
+        
+    }
+
+</style>
